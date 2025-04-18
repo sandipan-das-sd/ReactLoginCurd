@@ -23,7 +23,11 @@ const formSchema=new moongose.Schema({
     other:{
         type:"String",
         required:true
-    }
+    },
+    pendingEdit: {
+        type: Object, // Stores the requested changes
+        default: null
+      }
 
 },{
     timestamps:true
@@ -31,4 +35,5 @@ const formSchema=new moongose.Schema({
 
 )
 
-export const FormModel=moongose.model('form',formSchema)
+ const FormModel=moongose.model('form',formSchema)
+ export default FormModel

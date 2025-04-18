@@ -1,7 +1,7 @@
 import UserModel from '../models/users.js';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
-import { sendMail } from '../utils/sendMail.js';
+import { sendMail } from '../utlis/sendMail.js';
 import { otpStore } from '../utils/otpStore.js'; 
 
 // 🔹 Generate 6-digit OTP
